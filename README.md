@@ -1,8 +1,8 @@
 # Jenkins API Client for Go
 
-[![GoDoc](https://godoc.org/github.com/bndr/gojenkins?status.svg)](https://godoc.org/github.com/bndr/gojenkins)
-[![Go Report Cart](https://goreportcard.com/badge/github.com/bndr/gojenkins)](https://goreportcard.com/report/github.com/bndr/gojenkins)
-[![Build Status](https://travis-ci.org/bndr/gojenkins.svg?branch=master)](https://travis-ci.org/bndr/gojenkins)
+[![GoDoc](https://godoc.org/github.com/romanm-perun/gojenkins?status.svg)](https://godoc.org/github.com/romanm-perun/gojenkins)
+[![Go Report Cart](https://goreportcard.com/badge/github.com/romanm-perun/gojenkins)](https://goreportcard.com/report/github.com/romanm-perun/gojenkins)
+[![Build Status](https://travis-ci.org/romanm-perun/gojenkins.svg?branch=master)](https://travis-ci.org/romanm-perun/gojenkins)
 
 ## About
 
@@ -20,13 +20,13 @@ These are some of the features that are currently implemented:
 
 ## Installation
 
-    go get github.com/bndr/gojenkins
+    go get github.com/romanm-perun/gojenkins
 
 ## Usage
 
 ```go
 
-import "github.com/bndr/gojenkins"
+import "github.com/romanm-perun/gojenkins"
 
 jenkins := gojenkins.CreateJenkins(nil, "http://localhost:8080/", "admin", "admin")
 // Provide CA certificate if server is using self-signed certificate
@@ -82,13 +82,13 @@ j.CreateJob(configString, "someNewJobsName")
 
 ```
 
-API Reference: https://godoc.org/github.com/bndr/gojenkins
+API Reference: https://godoc.org/github.com/romanm-perun/gojenkins
 
 ## Examples
 
 For all of the examples below first create a jenkins object
 ```go
-import "github.com/bndr/gojenkins"
+import "github.com/romanm-perun/gojenkins"
 
 jenkins, _ := gojenkins.CreateJenkins(nil, "http://localhost:8080/", "admin", "admin").Init()
 ```

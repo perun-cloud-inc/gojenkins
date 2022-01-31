@@ -1,4 +1,4 @@
-module github.com/romanm-perun/gojenkins
+module github.com/perun-cloud-inc/gojenkins
 
 go 1.13
 
